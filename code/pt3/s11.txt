@@ -1,0 +1,4 @@
+<?php
+    // Tutaj wpisujemy kod PHP
+    echo "Dzisiaj jest " . date("d-m-Y");
+?>

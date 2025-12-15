@@ -1,0 +1,33 @@
+
+<?php
+$file = "guests.txt";
+
+if (isset($_POST['fname']) && isset($_POST['fsurname'])) {
+
+    $fname = trim($_POST['fname']);
+    $fsurname = trim($_POST['fsurname']);
+
+    // prosty zapis do pliku
+    $entry = $fname . " " . $fsurname . PHP_EOL;
+    file_put_contents($file, $entry, FILE_APPEND);
+}
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    
+    <?php
+        if (file_exists($file)) {
+            $entries = file($file);
+
+            foreach ($entries as $e) {
+                echo htmlspecialchars($e);
+            }
+        } else {
+            echo "Brak wpisów.";
+        }
+    ?>
+    </body>
+</html>

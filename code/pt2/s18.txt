@@ -1,0 +1,9 @@
+const img = document.querySelector("img");
+img.src = "photo.jpg";
+img.alt = "Opis obrazka";
+
+const newP = document.createElement("p");
+newP.textContent = "Nowy akapit";
+document.body.appendChild(newP);
+const element = document.getElementById("toRemove")
+element.remove();

@@ -1,0 +1,9 @@
+<h1 id=" naglowek ">Witaj!</h1>
+#naglowek {
+    color: red;
+}
+
+<p class= "opis"> Pierwszy akapit </p>
+.opis {
+    font-size: 18 px;
+}

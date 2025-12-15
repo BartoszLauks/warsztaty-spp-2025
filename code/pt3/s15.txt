@@ -1,0 +1,11 @@
+<?php
+    // JESLI formularz zostal wyslany
+    if (isset($_POST['fname']) && isset($_POST['fsurname'])) {
+    
+        $fname = trim($_POST['fname']);
+        $fsurname = trim($_POST['fsurname']);
+    }
+    
+    echo '<h3>Witaj: </h3>'.$fname. ' '. $fsurname
+    ?>
+    <br><a href=".."><--- BACK</a>
