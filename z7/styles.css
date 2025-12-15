@@ -1,0 +1,17 @@
+body {
+    background-color: aquamarine;
+    padding: 10px;
+}
+input {
+    margin-bottom: 10px;
+}
+input[type="submit"]:hover {
+    background-color: #db0d14; /* kolor po najechaniu */
+}
+.blue {
+    color: blue;
+}
+.green {
+    color: green;
+    font-size: 25px;
+}
